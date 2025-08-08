@@ -1,0 +1,37 @@
+/* DevSpark custom styles */
+:root {
+  --ds-primary: #0d6efd;
+}
+
+/***** Utilities *****/
+@media (min-width: 992px) {
+  .py-lg-6 { padding-top: 4.5rem !important; padding-bottom: 4.5rem !important; }
+}
+
+/***** Hero *****/
+header.bg-gradient {
+  background: linear-gradient(180deg, #f8f9ff 0%, #ffffff 100%);
+}
+.hero-shape {
+  position: absolute; inset: auto -10% -25% auto; width: 480px; height: 480px;
+  background: radial-gradient(60% 60% at 50% 50%, rgba(13,110,253,.25) 0%, rgba(13,110,253,0) 70%);
+  filter: blur(24px); pointer-events: none;
+}
+.showcase-illustration img { object-fit: cover; }
+
+/***** Icons *****/
+.icon-lg { font-size: 2rem; line-height: 1; }
+
+/***** Brands *****/
+img.brand { max-height: 36px; opacity: .9; filter: grayscale(100%); transition: filter .2s ease, opacity .2s ease; }
+img.brand:hover { filter: none; opacity: 1; }
+
+/***** Projects *****/
+.project { background: #fff; transition: transform .2s ease, box-shadow .2s ease; }
+.project:hover { transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.075) !important; }
+
+/***** Cards *****/
+.card .bi { vertical-align: -2px; }
+
+/***** Footer *****/
+footer a { color: inherit; }
